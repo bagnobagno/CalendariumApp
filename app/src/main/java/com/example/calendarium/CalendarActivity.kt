@@ -13,7 +13,7 @@ import android.widget.CalendarView.OnDateChangeListener
 class CalendarActivity : AppCompatActivity() {
     private lateinit var binding: FragmentCalendarBinding
     private lateinit var calendarView: CalendarView //*
-    private lateinit var dateTV: TextView
+    private lateinit var dateTV: TextView // komentarz
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
