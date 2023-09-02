@@ -50,4 +50,5 @@
     </string>
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="title_activity_pop_up">PopUpActivity</string>
+    <string name="title_activity_cal">CalActivity</string>
 </resources>
