@@ -22,11 +22,13 @@ class CalActivity : AppCompatActivity() {
         binding = ActivityCalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
         dateTV = findViewById(R.id.testtest)
         calendarView = findViewById(R.id.calendarView)
 
         binding.btnLogout.setOnClickListener{
-            FirebaseAuth.getInstance().signOut()
+            firebaseAuth.signOut()
 
             val logoutIntent = Intent(this, LogInActivity::class.java)
             logoutIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -47,5 +49,6 @@ class CalActivity : AppCompatActivity() {
                 dateTV.setText(Date)
             })
     }
+
 }
 
