@@ -51,4 +51,7 @@
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="title_activity_pop_up">PopUpActivity</string>
     <string name="title_activity_cal">CalActivity</string>
+    <string name="title_activity_recyclerview">Recyclerview</string>
+    <string name="element_text" />
+    <string name="fab_content_description" />
 </resources>

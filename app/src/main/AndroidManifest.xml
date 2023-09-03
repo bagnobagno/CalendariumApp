@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Calendarium"
         tools:targetApi="31">
         <activity
+            android:name=".Recyclerview"
+            android:exported="false"
+            android:label="@string/title_activity_recyclerview"
+            android:theme="@style/Theme.Calendarium" />
+        <activity
             android:name=".CalActivity"
             android:exported="false"
             android:label="@string/title_activity_cal"
