@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:background="#444444">
 
     <ImageView
@@ -48,7 +49,6 @@
             android:layout_height="wrap_content"
             android:paddingBottom="15dp"
             android:text="Sign up"
-            android:textAlignment="center"
             android:textColor="#ffffff"
             android:textColorHint="#ffffff" />
 
@@ -58,7 +58,6 @@
             android:layout_height="wrap_content"
             android:paddingBottom="15dp"
             android:text="Login"
-            android:textAlignment="center"
             android:textColor="#ffffff"
             android:textColorHint="#ffffff" />
     </LinearLayout>

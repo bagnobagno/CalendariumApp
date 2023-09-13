@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="16dp"
+    android:animateLayoutChanges="true"
     android:background="#441f"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
 
@@ -16,48 +17,48 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="260dp"
-        android:text="Logout"/>
+        android:text="Logout" />
 
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:background="#E1B0DB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_logout"
+        android:background="#E1B0DB"
         android:dateTextAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:weekDayTextAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-        android:firstDayOfWeek="2" />
+        android:firstDayOfWeek="2"
+        android:weekDayTextAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
     <LinearLayout
         android:id="@+id/notes_list_linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/calendarView"
+        android:layout_marginTop="5dp"
+        android:background="#E1B0DB"
         android:gravity="end"
         android:orientation="vertical"
-        android:background="#E1B0DB"
-        android:padding="16dp"
-        android:layout_below="@id/calendarView"
-        android:layout_marginTop="5dp">
+        android:padding="16dp">
 
         <LinearLayout
             android:id="@+id/button_linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#E1B0DB">
+            android:background="#E1B0DB"
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/addNoteButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:text="@string/dodaj_notatk"
-                android:layout_below="@id/notes_list_linear"/>
+                android:text="@string/dodaj_notatk" />
 
-                <Space
-                    android:layout_width="60dp"
-                    android:layout_height="20dp"/>
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="20dp" />
 
             <TextView
                 android:id="@+id/selectedDateTextView"
@@ -68,10 +69,10 @@
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
-            </LinearLayout>
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:itemCount="5"
@@ -81,16 +82,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/element_text"/>
-
-
-
-<!--        <EditText-->
-<!--            android:id="@+id/noteEditText"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/dodaj_notatke"-->
-<!--            android:importantForAutofill="no" />-->
+            android:text="@string/element_text" />
     </LinearLayout>
+
 
 </RelativeLayout>

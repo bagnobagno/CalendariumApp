@@ -1,5 +1,7 @@
 package com.example.calendarium
 
-data class ItemViewModel(val image: Int,val text: String){
+import android.text.Editable
+
+data class ItemViewModel(val image: Int, val text: Editable?){
 
 }
