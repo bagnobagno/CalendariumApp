@@ -9,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.calendarium.databinding.ActivityPopUpBinding
 
+
 class PopUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPopUpBinding

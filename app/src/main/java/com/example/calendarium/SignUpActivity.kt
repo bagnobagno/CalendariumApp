@@ -27,6 +27,7 @@ class SignUpActivity : AppCompatActivity()
             startActivity(startIntent)
         }
 
+
         binding.btnSubmit.setOnClickListener {
 
             val email = binding.etUserMail.text.toString()

@@ -41,6 +41,7 @@ class LogInActivity : AppCompatActivity() {
             }
         }
 
+
         binding.signupRedirectText.setOnClickListener {
             val signupIntent = Intent(this, SignUpActivity::class.java)
             startActivity(signupIntent)
